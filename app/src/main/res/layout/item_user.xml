@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/rv_title"
+            style="@style/rv_box"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/rv_content"
+            style="@style/rv_box"
+            android:layout_below="@id/rv_title"
+            android:text="Content" />
+
+        <TextView
+            android:id="@+id/rv_user"
+            style="@style/rv_box"
+            android:layout_below="@id/rv_content"
+            android:text="User" />
+
+        <TextView
+            android:id="@+id/rv_group"
+            style="@style/rv_box"
+            android:layout_below="@id/rv_user"
+            android:text="Group" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    tools:context=".ui.fragments.PostsDetailFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay1"
+        style="@style/detail_text_style"
+        android:hint="enter title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_title_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay2"
+        style="@style/detail_text_style"
+        android:layout_below="@id/lay1"
+        android:hint="enter description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_desc_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay3"
+        style="@style/detail_text_style"
+        android:layout_below="@id/lay2"
+        android:hint="which user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_user_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay4"
+        style="@style/detail_text_style"
+        android:layout_below="@id/lay3"
+        android:hint="which group">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_group_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:text="upload"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
